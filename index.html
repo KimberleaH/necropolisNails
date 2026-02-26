@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="responsive.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Necropolis Nails</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="desktop">
         <div class="nav-links">
           <a href="#" class="nav-logo">
             <h1 class="heading">Necropolis <span class="offset">Nails</span></h1>
@@ -19,7 +21,25 @@
           <a href="#about" class="link">About</a>
           <a href="#gallery" class="link">Gallery</a>
         </div>
-        <div class="nav-btn"><a href="#" class="white-btn button" target="_blank">Book Appointment</a></div>
+        <div class="nav-btn"><a href="https://book.heygoldie.com/Necropolis-Nails/checkout" class="white-btn button" target="_blank">Book Appointment</a></div>
+      </nav>
+
+      <nav class="mobile">
+        <div class="mbl nav-links">
+          <a href="#" class="nav-logo">
+            <h1 class="heading">Necropolis <span class="offset">Nails</span></h1>
+            <img class="logo" src="resources/images/logo.png">
+          </a>
+          
+          <div class="links-left">
+            <a href="#about" class="link">About</a>
+            <a href="#gallery" class="link">Gallery</a>
+          </div>
+        </div>
+
+        <a class="mbl-nav-btn" href="https://book.heygoldie.com/Necropolis-Nails/checkout" target="_blank">Book Appointment</a>
+        
+        
       </nav>
 
       <div class="hero-img"></div>
@@ -30,8 +50,8 @@
             <h2 class="heading">Heading Goes Here</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <div class="btn-group">
-              <a href="#" class="white-btn button" target="_blank">Book Appointment</a>
-              <a href="#" class="g-btn button" target="_blank">Gallery</a>
+              <a href="https://book.heygoldie.com/Necropolis-Nails/checkout" class="white-btn button" target="_blank">Book Appointment</a>
+              <a href="#" class="g-btn button">Gallery</a>
             </div>
           </div>
 
@@ -66,19 +86,32 @@
         
         <div class="about">
           <h3 class="heading">About Heading</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+          <div class="services">
             <h4>Services Offered</h4>
-            <div class="services">
+            <div class="bullets">
               <ul>
-                <li>Manicures & Pedicures</li>
-                <li>Gel-X, Hard Gel & Acrylic</li>
-                <li>Design Tiers</li>
+                <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>Manicures & Pedicures</li>
+                <li class="g2"><i class="fa fa-circle" aria-hidden="true"></i>Gel-X, Hard Gel & Acrylic</li>
+                <li class="g3"><i class="fa fa-circle" aria-hidden="true"></i>Design Tiers</li>
+                <li class="g4"><i class="fa fa-circle" aria-hidden="true"></i>Soak Off / Removal</li>
+                <li class="g5"><i class="fa fa-circle" aria-hidden="true"></i>Repairs</li>
+                <li class="g6"><i class="fa fa-circle" aria-hidden="true"></i>Free Consultation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accomdations">
+            <h4>Accomodations</h4>
+            <div class="bullets">
+              <ul>
+                <li><i class="fa fa-circle" aria-hidden="true"></i>Mobility Aid User</li>
+                <li><i class="fa fa-circle" aria-hidden="true"></i>Quiet Appointment</li>
               </ul>
               <ul>
-                <li>Soak Off / Removal</li>
-                <li>Repairs</li>
-                <li>Free Consultation</li>
+                <li><i class="fa fa-circle" aria-hidden="true"></i>Hard of Hearing</li>
+                <li><i class="fa fa-circle" aria-hidden="true"></i>Sensitive to Light</li>
               </ul>
             </div>
           </div>
