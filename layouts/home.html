@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../../assets/images/logo.png"> <!-- Favicon -->
-    <link href="../../static/admin/index.css" type="text/css" rel="stylesheet">
-    <link href="../../static/admin/responsive.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ absURL "images/logo.png" }}"> <!-- Favicon -->
+    <link href="{{ absURL "css/index.css" }}" type="text/css" rel="stylesheet">
+    <!-- <link href="{{ absURL "css/responsive.css" }}" type="text/css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>{{ .title }}</title>
+    <title>{{ .Params.title }}</title>
   </head>
   <body>
     <header>
       {{ partial "nav.html" . }}
 
-      <div class="hero-img"></div>
+      <div class="hero-img" style="background-image: url('{{ absURL .Params.heroImg }}');"></div>
 
       <section class="hero">
         <div class="hero-container">
@@ -28,7 +28,7 @@
           </div>
 
           <div class="hero-shape">
-            <img src="{{ .Params.heroImg }}">
+            <img src="{{ absURL "images/hero-mask.svg" }}">
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@
           <div class="hours">
             <ul>
               {{ range .Params.days }}
-              <li>{{ . }}</li>
+              <li>{{ . | safeHTML }}</li> <!-- safeHTML makes it so any HTML like <br> is captured -->
               {{ end }}
             </ul>
             <ul>
@@ -61,20 +61,17 @@
 
         
         <div class="about">
-          <h3 class="heading">About Heading</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h3 class="heading">{{ .Params.about }}</h3>
+          <p>{{ .Params.aboutBlurb }}</p>
           
           <div class="bullet-sections">
             <div class="services">
               <h4>Services Offered</h4>
               <div class="bullets">
                 <ul>
-                  <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>Manicures & Pedicures</li>
-                  <li class="g2"><i class="fa fa-circle" aria-hidden="true"></i>Gel-X, Hard Gel & Acrylic</li>
-                  <li class="g3"><i class="fa fa-circle" aria-hidden="true"></i>Design Tiers</li>
-                  <li class="g4"><i class="fa fa-circle" aria-hidden="true"></i>Soak Off / Removal</li>
-                  <li class="g5"><i class="fa fa-circle" aria-hidden="true"></i>Repairs</li>
-                  <li class="g6"><i class="fa fa-circle" aria-hidden="true"></i>Free Consultation</li>
+                  {{ range .Params.services }}
+                  <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  {{ end }}
                 </ul>
               </div>
             </div>
@@ -83,12 +80,9 @@
               <h4>Accomodations</h4>
               <div class="bullets">
                 <ul>
-                  <li><i class="fa fa-circle" aria-hidden="true"></i>Mobility Aid User</li>
-                  <li><i class="fa fa-circle" aria-hidden="true"></i>Quiet Appointment</li>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-circle" aria-hidden="true"></i>Hard of Hearing</li>
-                  <li><i class="fa fa-circle" aria-hidden="true"></i>Sensitive to Light</li>
+                  {{ range .Params.accomodations }}
+                  <li><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  {{ end }}
                 </ul>
               </div>
             </div>
@@ -98,26 +92,17 @@
 
       <section id="gallery">
         <div class="gallery-wrapper">
-          <div class="img img-1"></div>
-          <div class="img img-2"></div>
-          <div class="img img-3"></div>
-          <div class="img img-4"></div>
-          <div class="img img-5"></div>
-          <div class="img img-6"></div>
-          <div class="img img-7"></div>
-          <div class="img img-8"></div>
+          {{ range .Params.gallery }}
+          <div class="img" style="background-image: url('{{ absURL .image }}');"></div>
+          {{ end }}
         </div>
         
         <p>Follow on Instagram for more!</p>
-        <a class="instagram" href="#" target="_blank"><img class="instagram-logo" src="../../assets/images/instagram.svg"></a>
+        <a class="instagram" href="{{ .Params.instagram }}" target="_blank"><img class="instagram-logo" src="{{ absURL "images/instagram.svg" }}"></a>
       </section>
     </main>
 
     {{ partial "footer.html" . }}
 
-
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <link rel="stylesheet" href="/admin/dark.css">
-    <script src="https://unpkg.com/decap-cms@3.1.0-beta.5/dist/decap-cms.js"></script>
   </body>
 </html>

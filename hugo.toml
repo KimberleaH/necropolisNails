@@ -1,3 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
 locale = 'en-us'
 title = 'Necropolis Nail'
+disableKinds = ["taxonomy", "term"]
