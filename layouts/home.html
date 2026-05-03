@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ absURL "images/logo.png" }}"> <!-- Favicon -->
+    <link href="{{ absURL "css/index.css" }}" type="text/css" rel="stylesheet">
+    <!-- <link href="{{ absURL "css/responsive.css" }}" type="text/css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>{{ .Params.title }}</title>
+  </head>
+  <body>
+    <header>
+      {{ partial "nav.html" . }}
+
+      <div class="hero-img" style="background-image: url('{{ absURL .Params.heroImg }}');"></div>
+
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-left">
+            <h2 class="heading">{{ .Params.hero }}</h2>
+            <p>{{ .Params.heroBlurb }}</p>
+            <div class="btn-group">
+              <a class="white-btn button" href="{{ .Params.bookBtnLnk }}" target="_blank">{{ .Params.bookBtnTxt }}</a>
+              <a class="g-btn button" href="{{ .Params.galleryBtnLnk }}">{{ .Params.galleryBtnTxt }}</a>
+            </div>
+          </div>
+
+          <div class="hero-shape">
+            <img src="{{ absURL "images/hero-mask.svg" }}">
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about">
+        <aside>
+          <h3 class="heading">Necropolis Nails</h3>
+          <div class="contact">
+            <a class="address" href="{{ .Params.addressURL }}" target="_blank">{{ .Params.address }}</a>
+            <a class="phone" href="tel:+1 {{ .Params.phone }}"><i class="fa fa-phone" aria-hidden="true"></i>{{ .Params.phone }}</a>
+            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>{{ .Params.email }}</p>
+          </div>
+          
+          <div class="hours">
+            <ul>
+              {{ range .Params.days }}
+              <li>{{ . | safeHTML }}</li> <!-- safeHTML makes it so any HTML like <br> is captured -->
+              {{ end }}
+            </ul>
+            <ul>
+              {{ range .Params.hours }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          <p>Appointments by booking only</p>
+        </aside>
+
+        
+        <div class="about">
+          <h3 class="heading">{{ .Params.about }}</h3>
+          <p>{{ .Params.aboutBlurb }}</p>
+          
+          <div class="bullet-sections">
+            <div class="services">
+              <h4>Services Offered</h4>
+              <div class="bullets">
+                <ul>
+                  {{ range .Params.services }}
+                  <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+
+            <div class="accomdations">
+              <h4>Accomodations</h4>
+              <div class="bullets">
+                <ul>
+                  {{ range .Params.accomodations }}
+                  <li><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="gallery-wrapper">
+          {{ range .Params.gallery }}
+          <div class="img" style="background-image: url('{{ absURL .image }}');"></div>
+          {{ end }}
+        </div>
+        
+        <p>Follow on Instagram for more!</p>
+        <a class="instagram" href="{{ .Params.instagram }}" target="_blank"><img class="instagram-logo" src="{{ absURL "images/instagram.svg" }}"></a>
+      </section>
+    </main>
+
+    {{ partial "footer.html" . }}
+
+  </body>
+</html>

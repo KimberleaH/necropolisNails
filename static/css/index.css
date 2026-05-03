@@ -4,7 +4,7 @@
     font-family: CarroisGothicSC;
     src:
         local('CarroisGothicSC-Regular'),
-        url('resources/fonts/Carrois_Gothic_SC/CarroisGothicSC-Regular.ttf') format('truetype');
+        url('../fonts/Carrois_Gothic_SC/CarroisGothicSC-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
     font-family: DidactGothic;
     src:
         local('DidactGothic-Regular'),
-        url('resources/fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('truetype');
+        url('../fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -153,7 +153,6 @@ nav .link:hover {
 .hero-img {
     height: 100vh;
     width: 100%;
-    background-image: url('resources/images/pexels-cottonbro-3997389.jpg');
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 70%;
@@ -341,39 +340,6 @@ aside p {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.img-1 {
-    background-image: url('./resources/images/20250604_153151.jpg');
-}
-
-.img-2 {
-    background-image: url('./resources/images/20250604_153201.jpg');
-}
-
-.img-3 {
-    background-image: url('./resources/images/20250624_203839.jpg');
-}
-
-.img-4 {
-    background-image: url('./resources/images/20250624_2039000.jpg');
-}
-
-.img-5 {
-    background-image: url('./resources/images/20250627_164822.jpg');
-}
-
-.img-6 {
-    background-image: url('./resources/images/20250627_1949010.jpg');
-}
-
-.img-7 {
-    background-image: url('./resources/images/20250823_130650.jpg');
-}
-
-.img-8 {
-    background-image: url('./resources/images/20250823_130659.jpg');
-}
-
 
 #gallery p {
     margin-top: 32px;

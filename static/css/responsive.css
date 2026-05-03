@@ -73,7 +73,7 @@
         background: linear-gradient(
             rgba(0,0,0,.5) 100%,
             rgba(0,0,0,.5) 100%),
-            url('resources/images/pexels-cottonbro-3997389.jpg');
+            url('../images/pexels-cottonbro-3997389.jpg');
         background-position: center center;
         background-size: cover;
     }
