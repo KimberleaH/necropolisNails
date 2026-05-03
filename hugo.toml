@@ -1,4 +1,4 @@
 baseURL = '/'
 locale = 'en-us'
-title = 'Necropolis Nail'
+title = 'Necropolis Nails'
 disableKinds = ["taxonomy", "term"]
