@@ -1,14 +1,15 @@
       <nav class="desktop">
         <div class="nav-links">
-          <a href="#" class="nav-logo">
+          <a href="/" class="nav-logo">
             <h1 class="heading">Necropolis <span class="offset">Nails</span></h1>
             <img class="logo" src="{{ absURL "images/logo.png" }}">
           </a>
           
-          <a href="#about" class="link">About</a>
-          <a href="#gallery" class="link">Gallery</a>
+          {{ range .Params.navlinks }}
+          <a href="{{ .link }}" class="link">{{ .text }}</a>
+          {{ end }}
         </div>
-        <div class="nav-btn"><a href="https://book.heygoldie.com/Necropolis-Nails/checkout" class="white-btn button" target="_blank">Book Appointment</a></div>
+        <div class="nav-btn"><a href="{{ .Params.bookBtnLnk }}" class="white-btn button" target="_blank">{{ .Params.bookBtnTxt }}</a></div>
       </nav>
 
       <nav class="mobile">
@@ -24,5 +25,5 @@
           </div>
         </div>
 
-        <a class="mbl-nav-btn" href="https://book.heygoldie.com/Necropolis-Nails/checkout" target="_blank">Book Appointment</a>
+        <a class="mbl-nav-btn" href="{{ .Params.bookBtnLnk }}" class="white-btn button" target="_blank">{{ .Params.bookBtnTxt }}</a>
       </nav>
