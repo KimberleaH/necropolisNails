@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: KimberleaH/nercopolisNails
-  branch: hugo # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
   base_url: /
   auth_endpoint: /api/auth
 
@@ -12,18 +12,12 @@ public_folder: "/images"
 # The below needs to be updated...
 
 collections:
-  - name: 'pages'
-    label: 'Page'
+  - name: 'home'
+    label: 'Home'
     folder: 'content'
     slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
     editor:
-      preview: true
-    files:
-      - label: 'Home'
-      - name: 'home'
-      - file: 'content/_index.md'
-      - fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Hero', name: 'hero', widget: 'string' }
-        - { label: 'Hero Blurb', name: 'hero_blurb', widget: 'text' }
+      preview: true    
