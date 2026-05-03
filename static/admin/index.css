@@ -4,7 +4,7 @@
     font-family: CarroisGothicSC;
     src:
         local('CarroisGothicSC-Regular'),
-        url('resources/fonts/Carrois_Gothic_SC/CarroisGothicSC-Regular.ttf') format('truetype');
+        url('../../assets/fonts/Carrois_Gothic_SC/CarroisGothicSC-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
     font-family: DidactGothic;
     src:
         local('DidactGothic-Regular'),
-        url('resources/fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('truetype');
+        url('../../assets/fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
