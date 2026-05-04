@@ -41,10 +41,10 @@ services:
   - service: "Repairs"
   - service: "Free Consultation"
 accomodations:
-  - "Mobility Aid User"
-  - "Quiet Appointment"
-  - "Hard of Hearing"
-  - "Sensitive to Light"
+  - accom: "Mobility Aid User"
+  - accom: "Quiet Appointment"
+  - accom: "Hard of Hearing"
+  - accom: "Sensitive to Light"
 
 gallery:
   - image: "images/20250604_153151.jpg"
