@@ -47,13 +47,13 @@
           
           <div class="hours">
             <ul>
-              {{ range .Params.days }}
-              <li>{{ . | safeHTML }}</li> <!-- safeHTML makes it so any HTML like <br> is captured -->
+              {{ range .Params.businessHours }}
+              <li>{{ .day | safeHTML }}</li> <!-- safeHTML makes it so any HTML like <br> is captured -->
               {{ end }}
             </ul>
             <ul>
-              {{ range .Params.hours }}
-              <li>{{ . }}</li>
+              {{ range .Params.businessHours }}
+              <li>{{ .hours }}</li>
               {{ end }}
             </ul>
           </div>
@@ -71,7 +71,7 @@
               <div class="bullets">
                 <ul>
                   {{ range .Params.services }}
-                  <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  <li class="g1"><i class="fa fa-circle" aria-hidden="true"></i>{{ .service }}</li>
                   {{ end }}
                 </ul>
               </div>
@@ -82,7 +82,7 @@
               <div class="bullets">
                 <ul>
                   {{ range .Params.accomodations }}
-                  <li><i class="fa fa-circle" aria-hidden="true"></i>{{ . }}</li>
+                  <li><i class="fa fa-circle" aria-hidden="true"></i>{{ .accom }}</li>
                   {{ end }}
                 </ul>
               </div>

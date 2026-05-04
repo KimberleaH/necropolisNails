@@ -12,40 +12,39 @@ navlinks:
 hero: "Heading Goes Here"
 heroBlurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 heroImg: "images/pexels-cottonbro-3997389.jpg"
-bookBtnLnk: "https://book.heygoldie.com/Necropolis-Nails/checkout"
 bookBtnTxt: "Book Appointment"
-galleryBtnLnk: "#gallery"
+bookBtnLnk: "https://book.heygoldie.com/Necropolis-Nails/checkout"
 galleryBtnTxt: "Gallery"
-
-addressURL: "https://maps.app.goo.gl/t9F2BJqUisLArHYEA"
+galleryBtnlnk: "#gallery"
 address: "2500 W 6th St #H, Lawrence, KS 66049"
+addressURL: "https://maps.app.goo.gl/t9F2BJqUisLArHYEA"
 phone: "785.393.7901"
 email: "necropolisnails@gmail.com"
-days:
-  - "Tues - Sat"
-  - "<br>" # This makes a gap
-  - "Sunday"
-  - "Monday"
-hours:
-  - "11:00am - 3:15pm"
-  - "3:45pm - 9:00pm"
-  - "Closed"
-  - "Closed"
+instagram: "#"
+businessHours:
+  - day: "Tues - Sat"
+    hours: "11:00am - 3:15pm"
+  - day: "<br>" # This makes a gap
+    hours: "3:45pm - 9:00pm"
+  - day: "Sunday"
+    hours: "Closed"
+  - day: "Monday"
+    hours: "Closed"
 
 about: "About Heading"
 aboutBlurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 services:
-  - "Manicures & Pedicures"
-  - "Gel-X, Hard Gel & Acrylic"
-  - "Design Tiers"
-  - "Soak Off / Removal"
-  - "Repairs"
-  - "Free Consultation"
+  - service: "Manicures & Pedicures"
+  - service: "Gel-X, Hard Gel & Acrylic"
+  - service: "Design Tiers"
+  - service: "Soak Off / Removal"
+  - service: "Repairs"
+  - service: "Free Consultation"
 accomodations:
-  - "Mobility Aid User"
-  - "Quiet Appointment"
-  - "Hard of Hearing"
-  - "Sensitive to Light"
+  - accom: "Mobility Aid User"
+  - accom: "Quiet Appointment"
+  - accom: "Hard of Hearing"
+  - accom: "Sensitive to Light"
 
 gallery:
   - image: "images/20250604_153151.jpg"
@@ -56,6 +55,4 @@ gallery:
   - image: "images/20250627_1949010.jpg"
   - image: "images/20250823_130650.jpg"
   - image: "images/20250823_130659.jpg"
-
-instagram: "#"
 ---

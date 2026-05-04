@@ -18,8 +18,6 @@ collections:
     folder: 'content'
     slug: '{{slug}}'
     delete: false
-    editor:
-      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -35,7 +33,6 @@ collections:
 
       ############# BOOKING BUTTON #############
       - label: 'Booking Button'
-        name: 'bookBtn'
         widget: 'object'
         hint: 'This affects the button in the nav and the header section.'
         fields:
@@ -47,34 +44,34 @@ collections:
       - { label: 'Header Blurb', name: 'heroBlurb', widget: 'text' }
       - { label: 'Header Image', name: 'heroImg', widget: 'image' }
       - label: 'Gallery Button' ############# GALLERY BUTTON
-        name: 'galleryBtn'
         widget: 'object'
         fields:
         - { label: 'Text', name: 'galleryBtnTxt', widget: 'string' }
-        - { label: 'URL', name: 'galleryBtnLnk', widget: 'string' }
+        - { label: 'URL', name: 'galleryBtnlnk', widget: 'string' }
 
       ############# CONTACT SECTION #############
-      - label: 'Contact Info'
-        name: 'contactInfo'
+      - label: 'Address' ############# ADDRESS
         widget: 'object'
         fields:
-        - label: 'Address'
-          name: 'addressInf'
-          widget: 'object'
-          fields:
-          - { label: 'Address', name: 'address', widget: 'string' }
-          - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
+        - { label: 'Address', name: 'address', widget: 'string' }
+        - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
+
+      - label: 'Contact Info' ############# CONTACT
+        widget: 'object'
+        fields:
         - { label: 'Phone', name: 'phone', widget: 'string' }
         - { label: 'Email', name: 'email', widget: 'string' }
         - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
-        - label: 'Business Hours' ############# HOURS
-          name: 'busHours'
-          widget: 'list'
-          hint: 'Use <br> to create a gap.'
-          delete: true
-          fields:
-          - { label: 'Days', name: 'days', widget: 'string' }
-          - { label: 'Hours', name: 'hours', widget: 'string' }
+      
+      - label: 'Business Hours' ############# HOURS
+        name: 'businessHours'
+        widget: 'list'
+        hint: 'Use <br> to create a gap.'
+        delete: true
+        fields:
+        - { label: 'Days', name: 'days', widget: 'string' }
+        - { label: 'Hours', name: 'hours', widget: 'string' }
+        
 
       ############# ABOUT SECTION #############
       - { label: 'About Heading', name: 'about', widget: 'string' }
@@ -82,19 +79,19 @@ collections:
 
       ############# SERVICES BULLETS #############
       - label: 'Services'
-        name: 'servicesList'
+        name: 'services'
         widget: 'list'
         delete: true
         fields:
-        - { label: 'Services', name: 'services', widget: 'string' }
+        - { label: 'Service', name: 'service', widget: 'string' }
 
       ############# ACCOMODATIONS BULLETS #############
       - label: 'Accomodations'
-        name: 'accomList'
+        name: 'accomodations'
         widget: 'list'
         delete: true
         fields:
-        - { label: 'Accomodations', name: 'accomodations', widget: 'string' }
+        - { label: 'Accomodation', name: 'accom', widget: 'string' }
 
       ############# GALLERY SECTION #############
       - label: 'Gallery'
