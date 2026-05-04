@@ -1,5 +1,6 @@
 ---
 title: "Necropolis Nails"
+description: "Independent nail tech in Lawrence, KS"
 layout: "index"
 
 navlinks:
