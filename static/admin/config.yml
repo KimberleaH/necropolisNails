@@ -73,7 +73,12 @@ collections:
         - { label: 'Service', name: 'service', widget: 'string' }
 
       ############# ACCOMODATIONS BULLETS #############
-      - { label: 'Accomodation', name: 'accomodations', widget: 'string' }
+      - label: 'Accomodations'
+        name: 'accomodations'
+        widget: 'list'
+        delete: true
+        fields:
+        - { label: 'Accomodation', name: 'accom', widget: 'string' }
 
       ############# GALLERY SECTION #############
       - label: 'Gallery'
