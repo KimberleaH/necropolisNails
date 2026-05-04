@@ -32,36 +32,22 @@ collections:
         - { label: 'URL', name: 'link', widget: 'string' }
 
       ############# BOOKING BUTTON #############
-      - label: 'Booking Button'
-        widget: 'object'
-        hint: 'This affects the button in the nav and the header section.'
-        fields:
-        - { label: 'Text', name: 'bookBtnTxt', widget: 'string' }
-        - { label: 'URL', name: 'bookBtnLnk', widget: 'string' }
+      - { label: 'Text', name: 'bookBtnTxt', widget: 'string' }
+      - { label: 'URL', name: 'bookBtnLnk', widget: 'string' }
 
       ############# HERO SECTION #############
       - { label: 'Main Heading', name: 'hero', widget: 'string' }
       - { label: 'Header Blurb', name: 'heroBlurb', widget: 'text' }
       - { label: 'Header Image', name: 'heroImg', widget: 'image' }
-      - label: 'Gallery Button' ############# GALLERY BUTTON
-        widget: 'object'
-        fields:
-        - { label: 'Text', name: 'galleryBtnTxt', widget: 'string' }
-        - { label: 'URL', name: 'galleryBtnlnk', widget: 'string' }
+      - { label: 'Text', name: 'galleryBtnTxt', widget: 'string' }
+      - { label: 'URL', name: 'galleryBtnlnk', widget: 'string' }
 
       ############# CONTACT SECTION #############
-      - label: 'Address' ############# ADDRESS
-        widget: 'object'
-        fields:
-        - { label: 'Address', name: 'address', widget: 'string' }
-        - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
-
-      - label: 'Contact Info' ############# CONTACT
-        widget: 'object'
-        fields:
-        - { label: 'Phone', name: 'phone', widget: 'string' }
-        - { label: 'Email', name: 'email', widget: 'string' }
-        - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
+      - { label: 'Address', name: 'address', widget: 'string' }
+      - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
+      - { label: 'Phone', name: 'phone', widget: 'string' }
+      - { label: 'Email', name: 'email', widget: 'string' }
+      - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
       
       - label: 'Business Hours' ############# HOURS
         name: 'businessHours'
@@ -72,7 +58,6 @@ collections:
         - { label: 'Days', name: 'days', widget: 'string' }
         - { label: 'Hours', name: 'hours', widget: 'string' }
         
-
       ############# ABOUT SECTION #############
       - { label: 'About Heading', name: 'about', widget: 'string' }
       - { label: 'About Blurb', name: 'aboutBlurb', widget: 'text' }
