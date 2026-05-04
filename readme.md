@@ -2,13 +2,13 @@
 
 This landing page, for a small business, utilizes a JAMstack approach. The intent was to keep hosting costs as low as possible while allowing the business owner to manage the content of the website.
 
-### Credit
+## Credit
 
 The OAuth API functions for this project were sourced from this [Decap CMS / CloudFlare Pages Documentation](https://github.com/i40west/netlify-cms-cloudflare-pages/tree/main).
 
 I flattened the file paths to `/auth` and `/callback`, from `/api/auth` and `/api/callback` respectively since the former paths were not responding during testing.
 
-### Tech Stack
+## Tech Stack
 
 - JS, HTML, CSS
 - GitHub, OAuth
@@ -16,7 +16,7 @@ I flattened the file paths to `/auth` and `/callback`, from `/api/auth` and `/ap
 - Decap CMS
 - CloudFlare Pages
 
-### Purpose & Function
+## Purpose & Function
 
 The goal of this project: a lightweight and scalable site with content that could be managed by non-technical individuals but benefits from low to no hosting cost. An alternative to, say, WordPress' bloat and rising hosting costs.
 

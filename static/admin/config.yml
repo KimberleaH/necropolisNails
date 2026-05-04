@@ -79,7 +79,6 @@ collections:
       ############# ABOUT SECTION #############
       - { label: 'About Heading', name: 'about', widget: 'string' }
       - { label: 'About Blurb', name: 'aboutBlurb', widget: 'text' }
-      - { label: 'Header Image', name: 'heroImg', widget: 'image' }
 
       ############# SERVICES BULLETS #############
       - label: 'Services'
