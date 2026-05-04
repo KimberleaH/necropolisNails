@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: KimberleaH/nercopolisNails
+  repo: KimberleaH/necropolisNails
   branch: main # Branch to update (optional; defaults to master)
-  site_domain: https://nercopolisnails.pages.dev/
-  base_url: https://nercopolisnails.pages.dev/
+  site_domain: https://necropolisnails.pages.dev/
+  base_url: https://necropolisnails.pages.dev/
   auth_endpoint: /auth # This points to /functions/auth.js
 
 media_folder: "/static/images" # Folder where user uploaded files should go
