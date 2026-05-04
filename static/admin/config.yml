@@ -22,7 +22,7 @@ collections:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
 
       ############# NAV LINKS #############
       - label: 'Nav Links'
