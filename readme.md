@@ -1,3 +1,5 @@
+> ⚠️ This project is still in development! Layout adjustments for the CMS and responsive styling are in the works.
+
 # Necropolis Nails
 
 This landing page, for a small business, utilizes a JAMstack approach. The intent was to keep hosting costs as low as possible while allowing the business owner to manage the content of the website.
