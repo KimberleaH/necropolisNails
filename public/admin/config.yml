@@ -30,12 +30,8 @@ collections:
         widget: 'list'
         delete: true
         fields:
-        - label: "Link"
-          name: "navLink"
-          widget: "object"
-          fields:
-          - { label: 'Text', name: 'text', widget: 'string' }
-          - { label: 'URL', name: 'url', widget: 'string' }
+        - { label: 'Text', name: 'text', widget: 'string' }
+        - { label: 'URL', name: 'url', widget: 'string' }
 
       ############# BOOKING BUTTON #############
       - label: "Booking Button"
@@ -55,7 +51,7 @@ collections:
         - { label: 'Blurb', name: 'blurb', widget: 'text' }
         - { label: 'Image', name: 'image', widget: 'image' }
         - label: "Secondary Button"
-          name: "heading"
+          name: "secondButton"
           widget: "object"
           fields:
           - { label: 'Text', name: 'text', widget: 'string' }
@@ -90,8 +86,8 @@ collections:
         name: "about"
         widget: "object"
         fields:
-      - { label: 'Heading', name: 'heaing', widget: 'string' }
-      - { label: 'Blurb', name: 'blurb', widget: 'text' }
+        - { label: 'Heading', name: 'heading', widget: 'string' }
+        - { label: 'Blurb', name: 'blurb', widget: 'text' }
 
       ############# SERVICES BULLETS #############
       - label: 'Services'
