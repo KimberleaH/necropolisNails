@@ -1,0 +1,135 @@
+
+
+/*
+360px
+
+568px
+
+666px
+
+768px
+
+1024px
+
+1300px
+*/
+
+
+/* ----------- RESPONSIVE STYLING --------------- */
+/* ---------------------------------------------- */
+
+
+
+ 
+/* ---- Responsive Styles Tablet And Below ---- */
+@media all and (max-width: 568px) {
+
+    /* ------------ NAV STYLES ------------ */
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        border-bottom: none;
+    }
+
+
+    .mbl {
+        justify-content: space-between;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+
+    .mbl-nav-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+    }
+
+    .links-left a {
+        margin-left: 18px;
+        font-size: 1em;
+    }
+
+    /* ------------ HEADING STYLES ------------ */
+
+    .hero-shape {
+        display: none;
+    }
+
+    .hero-img {
+        background: linear-gradient(
+            rgba(0,0,0,.5) 100%,
+            rgba(0,0,0,.5) 100%),
+            url('../images/pexels-cottonbro-3997389.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .hero-container {
+        justify-content: center;
+    }
+
+    .hero-left {
+        width: 100%;
+        padding: 40px 10px 0;
+        background-color: transparent;
+    }
+
+
+    /* ------------ ABOUT STYLES ------------ */
+
+    #about {
+        flex-direction: column;
+        margin: 72px 10px;
+        gap: 72px;
+    }
+
+    .about {
+        max-width: 100%;
+        order: 1;
+    }
+
+
+    aside {
+        order: 2;
+        padding: 32px;
+        max-width: none;
+    }
+
+
+.bullets {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.bullets li {
+    color: #D3D3D3;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+
+.accomdations {
+    margin-top: 48px;
+}
+
+
+
+}
+    
+

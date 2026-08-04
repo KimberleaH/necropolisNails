@@ -9,18 +9,26 @@ navlinks:
   - text: "Gallery"
     link: "#gallery"
 
-hero: "Heading Goes Here"
-heroBlurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-heroImg: "images/pexels-cottonbro-3997389.jpg"
-bookBtnTxt: "Book Appointment"
-bookBtnLnk: "https://book.heygoldie.com/Necropolis-Nails/checkout"
-galleryBtnTxt: "Gallery"
-galleryBtnlnk: "#gallery"
-address: "2500 W 6th St #H, Lawrence, KS 66049"
-addressURL: "https://maps.app.goo.gl/t9F2BJqUisLArHYEA"
-phone: "785.393.7901"
-email: "necropolisnails@gmail.com"
-instagram: "#"
+bookButton:
+  text: "Book Appointment"
+  link: "https://book.heygoldie.com/Necropolis-Nails/checkout"
+
+header:
+  heading: "Heading Goes Here"
+  blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  image: "images/pexels-cottonbro-3997389.jpg"
+  secondButton:
+    text: "Gallery"
+    url: "#gallery"
+
+contact:
+  address: "2500 W 6th St #H, Lawrence, KS 66049"
+  addressURL: "https://maps.app.goo.gl/t9F2BJqUisLArHYEA"
+  phone: "785.393.7901"
+  email: "necropolisnails@gmail.com"
+  note: "Appointments by booking only"
+  instagram: "https://www.instagram.com/necropolisnails/"
+
 businessHours:
   - day: "Tues - Sat"
     hours: "11:00am - 3:15pm"
@@ -31,8 +39,10 @@ businessHours:
   - day: "Monday"
     hours: "Closed"
 
-about: "About Heading"
-aboutBlurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+about:
+  heading: "About Heading"
+  blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
 services:
   - service: "Manicures & Pedicures"
   - service: "Gel-X, Hard Gel & Acrylic"
@@ -40,6 +50,7 @@ services:
   - service: "Soak Off / Removal"
   - service: "Repairs"
   - service: "Free Consultation"
+
 accomodations:
   - accom: "Mobility Aid User"
   - accom: "Quiet Appointment"

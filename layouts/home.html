@@ -15,16 +15,16 @@
     <header>
       {{ partial "nav.html" . }}
 
-      <div class="hero-img" style="background-image: url('{{ absURL .Params.heroImg }}');"></div>
+      <div class="hero-img" style="background-image: url('{{ absURL .Params.header.image }}');"></div>
 
       <section class="hero">
         <div class="hero-container">
           <div class="hero-left">
-            <h2 class="heading">{{ .Params.hero }}</h2>
-            <p>{{ .Params.heroBlurb }}</p>
+            <h2 class="heading">{{ .Params.header.heading }}</h2>
+            <p>{{ .Params.header.blurb }}</p>
             <div class="btn-group">
-              <a class="white-btn button" href="{{ .Params.bookBtnLnk }}" target="_blank">{{ .Params.bookBtnTxt }}</a>
-              <a class="g-btn button" href="{{ .Params.galleryBtnLnk }}">{{ .Params.galleryBtnTxt }}</a>
+              <a class="white-btn button" href="{{ .Params.bookButton.link }}" target="_blank">{{ .Params.bookButton.text }}</a>
+              <a class="g-btn button" href="{{ .Params.header.secondButton.link }}">{{ .Params.header.secondButton.text }}</a>
             </div>
           </div>
 
@@ -40,9 +40,9 @@
         <aside>
           <h3 class="heading">Necropolis Nails</h3>
           <div class="contact">
-            <a class="address" href="{{ .Params.addressURL }}" target="_blank">{{ .Params.address }}</a>
-            <a class="phone" href="tel:+1 {{ .Params.phone }}"><i class="fa fa-phone" aria-hidden="true"></i>{{ .Params.phone }}</a>
-            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>{{ .Params.email }}</p>
+            <a class="address" href="{{ .Params.contact.addressURL }}" target="_blank">{{ .Params.contact.address }}</a>
+            <a class="phone" href="tel:+1 {{ .Params.contact.phone }}"><i class="fa fa-phone" aria-hidden="true"></i>{{ .Params.contact.phone }}</a>
+            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>{{ .Params.contact.email }}</p>
           </div>
           
           <div class="hours">
@@ -57,13 +57,13 @@
               {{ end }}
             </ul>
           </div>
-          <p>Appointments by booking only</p>
+          <p>{{ .Params.contact.note }}</p>
         </aside>
 
         
         <div class="about">
-          <h3 class="heading">{{ .Params.about }}</h3>
-          <p>{{ .Params.aboutBlurb }}</p>
+          <h3 class="heading">{{ .Params.about.heading }}</h3>
+          <p>{{ .Params.about.blurb }}</p>
           
           <div class="bullet-sections">
             <div class="services">
@@ -99,7 +99,7 @@
         </div>
         
         <p>Follow on Instagram for more!</p>
-        <a class="instagram" href="{{ .Params.instagram }}" target="_blank"><img class="instagram-logo" src="{{ absURL "images/instagram.svg" }}"></a>
+        <a class="instagram" href="{{ .Params.contact.instagram }}" target="_blank"><img class="instagram-logo" src="{{ absURL "images/instagram.svg" }}"></a>
       </section>
     </main>
 
