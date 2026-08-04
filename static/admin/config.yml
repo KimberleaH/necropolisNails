@@ -19,7 +19,7 @@ collections:
     slug: '{{slug}}'
     delete: false
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -27,29 +27,51 @@ collections:
       ############# NAV LINKS #############
       - label: 'Nav Links'
         name: 'navlinks'
-        widget: 'list'
-        delete: true
+        widget: 'object'
+        summary: "Nav Links"
         fields:
         - { label: 'Text', name: 'text', widget: 'string' }
         - { label: 'URL', name: 'link', widget: 'string' }
 
       ############# BOOKING BUTTON #############
-      - { label: 'Booking Button Text', name: 'bookBtnTxt', widget: 'string' }
-      - { label: 'Booking Button URL', name: 'bookBtnLnk', widget: 'string' }
+      - label: "Booking Button"
+        name: "bookButton"
+        widget: "object"
+        summary: 'Booking Button'
+        fields:
+        - { label: 'Booking Button Text', name: 'bookBtnTxt', widget: 'string' }
+        - { label: 'Booking Button URL', name: 'bookBtnLnk', widget: 'string' }
 
       ############# HERO SECTION #############
-      - { label: 'Main Heading', name: 'hero', widget: 'string' }
-      - { label: 'Header Blurb', name: 'heroBlurb', widget: 'text' }
-      - { label: 'Header Image', name: 'heroImg', widget: 'image' }
-      - { label: 'Gallery Button Text', name: 'galleryBtnTxt', widget: 'string' }
-      - { label: 'Gallery Button URL', name: 'galleryBtnlnk', widget: 'string' }
+      - label: "Heading Content"
+        name: "heading"
+        widget: "object"
+        summary: 'Heading Content'
+        fields:
+        - { label: 'Main Heading', name: 'hero', widget: 'string' }
+        - { label: 'Header Blurb', name: 'heroBlurb', widget: 'text' }
+        - { label: 'Header Image', name: 'heroImg', widget: 'image' }
+        - label: "Gallery Button"
+          name: "heading"
+          widget: "object"
+          summary: 'Gallery Button'
+          fields:
+          - { label: 'Gallery Button Text', name: 'galleryBtnTxt', widget: 'string' }
+          - { label: 'Gallery Button URL', name: 'galleryBtnlnk', widget: 'string' }
 
       ############# CONTACT SECTION #############
-      - { label: 'Address', name: 'address', widget: 'string' }
-      - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
-      - { label: 'Phone', name: 'phone', widget: 'string' }
-      - { label: 'Email', name: 'email', widget: 'string' }
-      - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
+
+      - label: "Contact Section"
+        name: "contact"
+        widget: "object"
+        summary: 'Contact Section'
+        fields:
+        - { label: 'Phone', name: 'phone', widget: 'string' }
+        - { label: 'Email', name: 'email', widget: 'string' }
+        - { label: 'GMB URL', name: 'addressURL', widget: 'string' }
+        - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
+        - { label: 'Address', name: 'address', widget: 'string' }
+        
       
       - label: 'Business Hours' ############# HOURS
         name: 'businessHours'
