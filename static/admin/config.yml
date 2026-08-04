@@ -12,17 +12,20 @@ public_folder: "/images"
 
 # The below needs to be updated...
 
-collections:
+singletons:
   - name: 'home'
     label: 'Home'
-    folder: 'content'
-    slug: '{{slug}}'
+    file: 'content/index.md'
+    media_folder: /static/images/uploads
+    public_folder: /images/uploads
     delete: false
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - name: 'title'
+        label: 'Title'
+      - name: 'description'
+        label: 'Description'
 
       ############# NAV LINKS #############
       - label: 'Nav Links'
@@ -30,8 +33,10 @@ collections:
         widget: 'list'
         delete: true
         fields:
-        - { label: 'Text', name: 'text', widget: 'string' }
-        - { label: 'URL', name: 'url', widget: 'string' }
+        - name: 'text'
+          label: 'Text'
+        - name: 'url'
+          label: 'URL'
 
       ############# BOOKING BUTTON #############
       - label: "Booking Button"
@@ -48,7 +53,7 @@ collections:
         widget: "object"
         fields:
         - { label: 'Heading', name: 'heading', widget: 'string' }
-        - { label: 'Blurb', name: 'blurb', widget: 'text' }
+        - { label: 'Blurb', name: 'blurb', widget: 'richtext' }
         - { label: 'Image', name: 'image', widget: 'image' }
         - label: "Secondary Button"
           name: "secondButton"
@@ -71,8 +76,8 @@ collections:
         - { label: 'Instagram', name: 'instagram', widget: 'string', hint: 'This appears below the gallery.' }
         
         
-      
-      - label: 'Business Hours' ############# HOURS
+      ############# HOURS #############
+      - label: 'Business Hours' 
         name: 'businessHours'
         widget: 'list'
         hint: 'Use <br> to create a gap.'
@@ -87,7 +92,7 @@ collections:
         widget: "object"
         fields:
         - { label: 'Heading', name: 'heading', widget: 'string' }
-        - { label: 'Blurb', name: 'blurb', widget: 'text' }
+        - { label: 'Blurb', name: 'blurb', widget: 'richtext' }
 
       ############# SERVICES BULLETS #############
       - label: 'Services'
