@@ -6,10 +6,10 @@
           </a>
           
           {{ range .Params.navlinks }}
-          <a href="{{ .link }}" class="link">{{ .text }}</a>
+          <a href="{{ .url }}" class="link">{{ .text }}</a>
           {{ end }}
         </div>
-        <div class="nav-btn"><a href="{{ .Params.bookButton.link }}" class="white-btn button" target="_blank">{{ .Params.bookButton.text }}</a></div>
+        <div class="nav-btn"><a href="{{ .Params.bookButton.url }}" class="white-btn button" target="_blank">{{ .Params.bookButton.text }}</a></div>
       </nav>
 
       <nav class="mobile">
@@ -25,5 +25,5 @@
           </div>
         </div>
 
-        <a class="mbl-nav-btn" href="{{ .Params.bookBtnLnk }}" class="white-btn button" target="_blank">{{ .Params.bookBtnTxt }}</a>
+        <a class="mbl-nav-btn" href="{{ .Params.bookButton.url }}" class="white-btn button" target="_blank">{{ .Params.bookButton.text }}</a>
       </nav>

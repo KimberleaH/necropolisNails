@@ -5,13 +5,13 @@ layout: "index"
 
 navlinks:
   - text: "About"
-    link: "#about"
+    url: "#about"
   - text: "Gallery"
-    link: "#gallery"
+    url: "#gallery"
 
 bookButton:
   text: "Book Appointment"
-  link: "https://book.heygoldie.com/Necropolis-Nails/checkout"
+  url: "https://book.heygoldie.com/Necropolis-Nails/checkout"
 
 header:
   heading: "Heading Goes Here"
